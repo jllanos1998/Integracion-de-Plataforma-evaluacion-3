@@ -70,6 +70,9 @@ body{
     background-color: rgb(255, 216, 142);
  
 }
+.table_tr td:hover{
+    background-color:  rgb(246, 190, 86);
+}
 .contenedor__table thead tr th{
     font-size: 20px;
     padding: 10px;
@@ -82,18 +85,29 @@ body{
 }
 .editar,.eliminar{
     text-decoration: none;
+    box-shadow: 3px 3px 10px white;
 }
 .eliminar{
     color: white;
     background-color: red;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
+    transition: 1s linear;
     
 }
+.eliminar:hover{
+    background-color: rgb(199, 0, 0);
+}
+
 .editar{
     color: black;
     background-color: yellow;
-    padding: 3px;
+    padding: 5px;
+    transition: 0.2s linear;
+    border-radius: 5px;
+}
+.editar:hover{
+    background-color:rgb(208, 208, 0);
 }
 .contenedor_form{
     background-color: cadetblue;
