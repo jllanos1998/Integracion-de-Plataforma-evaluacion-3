@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.contenedor__table{
+    border-collapse: collapse;
+    width: 96%; 
+    text-align: center;  
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.table_tr th{
+    border: 2px solid white;
+    margin: 0;
+    text-transform: uppercase;
+    background-color: orange;
+   
+}
+.table_tr td{
+    border: 2px solid white;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: rgb(255, 216, 142);
+ 
+}
+.contenedor__table thead tr th{
+    font-size: 20px;
+    padding: 10px;
+  
+}
+
+.title_create{
+    text-align: center;
+    padding: 10px;
+}
+.editar,.eliminar{
+    text-decoration: none;
+}
+.eliminar{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 3px;
+    
+}
+.editar{
+    color: black;
+    background-color: yellow;
+    padding: 3px;
+}
+.contenedor_form{
+    background-color: cadetblue;
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 10px;
+}
+.form{
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    justify-items: center;
+    justify-content: center;
+}
+.form p{
+    width: 100%;
+}
+.form p label{
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+
+.input{
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    text-align: center;
+    background-color: rgb(19, 19, 97);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-transform:uppercase;
+    grid-column: 1/-1;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px black;
+}
+.btn:hover{
+    background-color: rgb(16, 16, 81) ;
+}
+.contenedor__confirmacion{
+    width: 500px;
+    height: auto;
+    background-color: rgb(255, 255, 113);
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px orange;
+}
+.title_confirmacion{
+    padding: 10px;
+}
+.delete{
+    margin: 10px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    height: 100%;
+    cursor: pointer;
+    transition: 1s linear;
+}
+.delete:hover{
+    background-color: rgb(13, 13, 182);
+}
+.cancelar{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    transition: 1s linear;
+}
+.cancelar:hover{
+    background-color: rgb(198, 20, 20);
+}
+
+form{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

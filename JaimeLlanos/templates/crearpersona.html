@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block titulo %}Formulario de contacto{% endblock titulo %}
+{% block cuerpo %} 
+    <h1 class="title_create">
+        Registro de Usuario
+    </h1>
+    <div class="contenedor_form">
+        <form class="form" method="post">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button class="btn" type="submit">Crear o editar</button>
+        </form>
+    </div>
+    
+{% endblock cuerpo %}

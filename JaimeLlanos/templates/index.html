@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Listado de contacto{% endblock titulo %}</title>
+    {% block link %}<link rel="stylesheet" href="{% static 'css/estilos.css' %}">{% endblock link %}
+</head>
+<body>
+    {% block cuerpo %}
+    <h1 class="title">Lista de Usuarios</h1>
+    <div class="contenedor">
+        <table class="contenedor__table">
+            <thead>
+                <tr class="table_tr" >
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>sexo</th>
+                    <th>Telefono</th>
+                    <th>Direccion</th>
+                    <th>Opcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for usuarios in object_list %}
+                    <tr class="table_tr">
+                        <td>{{ usuarios.nombre }}</td>
+                        <td>{{ usuarios.apellido }}</td>
+                        <td>{{ usuarios.edad }}</td>
+                        <td>{{ usuarios.sexo }}</td>
+                        <td>{{ usuarios.telefono }}</td>
+                        <td>{{ usuarios.direccion }}</td>
+                        <td><a class="editar" href="{% url 'editarpersona' usuarios.id_user %}">Editar</a> <a class="eliminar" href="{% url 'eliminarpersona' usuarios.id_user %}">Eliminar</i></a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+   
+    {% endblock cuerpo %}
+   
+</body>
+</html>
